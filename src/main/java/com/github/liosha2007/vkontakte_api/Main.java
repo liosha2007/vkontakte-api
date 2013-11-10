@@ -139,7 +139,7 @@ public class Main {
         // 56/75 http://cs419429.vk.me/v419429581/16a03/wghc9NDoZow.jpg
         // 768/1024 http://cs419429.vk.me/v419429581/16a07/Yl1BEqdb1dE.jpg
 
-        String photoId = "310883100";
+        String photoId = "314209198";
 
         /**
          * Параметры
@@ -160,9 +160,6 @@ public class Main {
                 .replace("{ACCESS_TOKEN}", access_token);
         resp = invokeApi(reqUrl, GET, MapUtils.asMap("photos", user_id + "_" + photoId).pt("photo_sizes", "1"));
         System.out.println("photos.getById: " + resp);
-
-
-
 
         String _albumId = "166381544";
         int sec = getDownloadTime(access_token, user_id, _albumId);
